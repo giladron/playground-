@@ -16,6 +16,9 @@
     <script>
         //jQuery examples 
         $(document).ready(function () {
+            $("h3").addClass("animated rotateInDownRight");
+            $("#left-well").addClass("animated slideInRight");
+            $("#right-well").addClass("animated slideInLeft");
             $("#target1").css("color", "red");
             $("#target1").prop("disabled", true);
             $("#target4").remove();
@@ -25,14 +28,14 @@
             $("#right-well").children().css("color", "orange");
             $("#left-well").children().css("color", "green");
             $("#target2").css("color", "black");
-            $(".target:nth-child(2)").addClass("animated bounce");
-            $(".target:even").addClass("animated shake");
+            $(".target:nth-child(2)").addClass("animated bounce infinite");
+            $(".target:even").addClass("animated shake infinite");
             $("#target2").click(function () {
-                $("body").addClass("animated hinge");
+                $("body").addClass("animated hinge infinite");
             });
-           
-            
-        
+
+
+
 
         });
 
